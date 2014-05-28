@@ -308,7 +308,7 @@ namespace DayOfWeekPersonalization
                                     @"<p>To change when this page is visible</p>
                                     <ol>
                                         <li>Go to Sitefinity's Backend</li> 
-                                        <li>Select <i>Profile &gt; Personalization</i></li>
+                                        <li>Select <i>Marketing &gt; Personalization</i></li>
                                         <li>Select the <i>Weekend segment</i></li>
                                         <li>Modify the existing <i>characteristics</i></li>
                                         <li>Click <i>Save changes</i></li>

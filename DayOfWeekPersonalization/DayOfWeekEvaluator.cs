@@ -8,7 +8,7 @@ namespace DayOfWeekPersonalization
     /// </summary>
     public class DayOfWeekEvaluator : ICriterionEvaluator
     {
-         #region Properties
+        #region Properties
 
         /// <summary>
         /// Gets the integer representation of the current day of the week.
