@@ -47,3 +47,9 @@ You must have a running Sitefinity project that with a personalization module in
 3. Open your project and add a reference to the *DayOfWeekPersonalization.dll*.
 
 4. Build and run your Sitefinity application.
+
+
+### Additional resources
+
+[Persoanlization tutorial](http://www.sitefinity.com/documentation/documentationarticles/tutorials-personalization)
+
