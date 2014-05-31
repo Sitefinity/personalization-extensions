@@ -51,5 +51,5 @@ You must have a running Sitefinity project that with a personalization module in
 
 ### Additional resources
 
-[Persoanlization tutorial](http://www.sitefinity.com/documentation/documentationarticles/tutorials-personalization)
+[Personalization tutorial](http://www.sitefinity.com/documentation/documentationarticles/tutorials-personalization)
 
