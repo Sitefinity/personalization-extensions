@@ -5,7 +5,7 @@ Personalization extensions
 
 Sitefinity’s personalization feature gives developers the power to create separate experiences for users grouped by a certain criteria. As a developer, you can deliver different content to be served to different types of users (user segments). You can build set of rules on which the user segments are based. You can then create different versions of the pages of your website. 
 
-This Personalization extensions sample demonstrates a scenario where you need to personalize the content of a page depending on what day of the week the page is opened on. To achieve this, you need to extend the default functionality of Sitefinity's personalization module to fit your requirements.
+This Personalization extensions sample demonstrates a scenario where you need to personalize the content of a page depending on what day of the week users open the page. To achieve this, you need to extend the default functionality of Sitefinity's personalization module to fit your requirements.
 
 
 
