@@ -180,7 +180,7 @@ namespace DayOfWeekPersonalization
             PageManager pageManager = PageManager.GetManager();
             if (!pageManager.GetPageNodes().Any(a => a.Name == Installer.pageName))
             {
-                CreatePage(Installer.pageName, false);
+                CreatePageNativeAPI(Installer.pageId, Installer.pageName, false, Guid.Empty);
                 AddControlToPage();
                 PersonalizePage();
             }
@@ -191,19 +191,22 @@ namespace DayOfWeekPersonalization
         /// </summary>
         /// <param name="pageName">Name of the page.</param>
         /// <param name="isHomePage">if set to <c>true</c> sets the page as a home page.</param>
-        public static void CreatePage(string pageName, bool isHomePage)
+        public static void CreatePageNativeAPI(Guid pageId, string pageName, bool isHomePage, Guid parentPageNodeId)
         {
             PageManager manager = PageManager.GetManager();
             PageData pageData = null;
             PageNode pageNode = null;
 
             // Get the parent node Id
-            var parentPageNodeId = SiteInitializer.CurrentFrontendRootNodeId;
+            if (parentPageNodeId == Guid.Empty)
+            {
+                parentPageNodeId = SiteInitializer.CurrentFrontendRootNodeId;
+            }
 
             PageNode parent = manager.GetPageNode(parentPageNodeId);
 
             // Check whether exists
-            var initialPageNode = manager.GetPageNodes().Where(n => n.Id == Installer.pageId).SingleOrDefault();
+            var initialPageNode = manager.GetPageNodes().Where(n => n.Id == pageId).SingleOrDefault();
 
             if (initialPageNode != null)
             {
@@ -211,7 +214,7 @@ namespace DayOfWeekPersonalization
             }
 
             // Create the page
-            pageNode = manager.CreatePage(parent, Installer.pageId, NodeType.Standard);
+            pageNode = manager.CreatePage(parent, pageId, NodeType.Standard);
 
             //pageData.NavigationNode = pageNode;
             pageData = pageNode.GetPageData();
@@ -229,7 +232,7 @@ namespace DayOfWeekPersonalization
             // Check whether home page
             if (isHomePage)
             {
-                SystemManager.CurrentContext.CurrentSite.SetHomePage(Installer.pageId);
+                manager.SetHomePage(pageId);
             }
 
             manager.SaveChanges();
@@ -237,7 +240,7 @@ namespace DayOfWeekPersonalization
             // Publish
             var bag = new Dictionary<string, string>();
             bag.Add("ContentType", typeof(PageNode).FullName);
-            WorkflowManager.MessageWorkflow(Installer.pageId, typeof(PageNode), null, "Publish", false, bag);
+            WorkflowManager.MessageWorkflow(pageId, typeof(PageNode), null, "Publish", false, bag);
         }
 
         /// <summary>

@@ -11,6 +11,32 @@ namespace DayOfWeekPersonalization
         #region Properties
 
         /// <summary>
+        /// Gets or sets the current date time.
+        /// </summary>
+        /// <value>
+        /// The current date time.
+        /// </value>
+        public DateTime CurrentDateTime
+        {
+            get
+            {
+                if (this.dateTime != null)
+                {
+                    return this.dateTime;
+                }
+                else
+                {
+                    return DateTime.Now;
+                }
+            }
+
+            set
+            {
+                this.dateTime = value;
+            }
+        }
+
+        /// <summary>
         /// Gets the integer representation of the current day of the week.
         /// </summary>
         /// <value>
@@ -20,7 +46,7 @@ namespace DayOfWeekPersonalization
         {
             get
             {
-                DateTime currentDay = DateTime.Now;
+                DateTime currentDay = this.CurrentDateTime;
                 int currentDayOfWeek = (int)currentDay.DayOfWeek;
                 return currentDayOfWeek;
             }
@@ -49,6 +75,12 @@ namespace DayOfWeekPersonalization
                 return false;
             }
         }
+
+        #endregion
+
+        #region Private members
+
+        private DateTime dateTime;
 
         #endregion
     }

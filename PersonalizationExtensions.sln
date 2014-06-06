@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F9A3FE
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOfWeekPersonalizationUnitTests", "DayOfWeekPersonalizationUnitTests\DayOfWeekPersonalizationUnitTests.csproj", "{8152B98A-7A87-480C-9690-90F4789F5DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayOfWeekPersonalizationIntegrationTests", "DayOfWeekPersonalizationIntegrationTests\DayOfWeekPersonalizationIntegrationTests.csproj", "{16194DDC-E6E2-4C95-9542-32BCFB06F347}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{64B41B96-C135-4C4D-A421-D1166CC8CA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64B41B96-C135-4C4D-A421-D1166CC8CA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64B41B96-C135-4C4D-A421-D1166CC8CA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8152B98A-7A87-480C-9690-90F4789F5DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8152B98A-7A87-480C-9690-90F4789F5DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8152B98A-7A87-480C-9690-90F4789F5DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8152B98A-7A87-480C-9690-90F4789F5DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16194DDC-E6E2-4C95-9542-32BCFB06F347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16194DDC-E6E2-4C95-9542-32BCFB06F347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16194DDC-E6E2-4C95-9542-32BCFB06F347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16194DDC-E6E2-4C95-9542-32BCFB06F347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
