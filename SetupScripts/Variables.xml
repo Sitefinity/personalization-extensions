@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables>
+  <siteName>PersonalizationExtensions</siteName>
+  <websiteUrl>http://localhost:3657/</websiteUrl>
+  <websitePort>3657</websitePort>
+  <projectBackupLocation>C:\_EmptyProjects\PersonalizationExtensionsSitefinityWebAppBackup\SitefinityWebApp</projectBackupLocation>
+  <projectBuildLocation>C:\SamplesBuilds\PersonalizationExtensions\SitefinityWebApp</projectBuildLocation>
+  <projectBuildName>SitefinityWebApp.sln</projectBuildName>
+  <databaseBackupLocation>C:\SamplesBuilds\PersonalizationExtensions\SitefinityWebApp\App_Data</databaseBackupLocation>
+  <databaseBackupName>PersonalizationExtensions</databaseBackupName>
+  <databaseServer>.\SQLEXPRESS</databaseServer>
+</variables>
