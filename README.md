@@ -51,5 +51,6 @@ You must have a running Sitefinity project that with a personalization module in
 
 ### Additional resources
 
-[Personalization tutorial](http://www.sitefinity.com/documentation/documentationarticles/tutorials-personalization)
+- [Overview: Personalization](http://docs.sitefinity.com/overview-personalization)
+- [Tutorial: Create custom personalization criteria](http://docs.sitefinity.com/tutorial-create-custom-personalization-criteria)
 
