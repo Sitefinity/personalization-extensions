@@ -3,15 +3,15 @@ Personalization extensions
 
 [![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.PersonalizationExtensions.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.PersonalizationExtensions.CI/)
 
-Sitefinity’s personalization feature gives developers the power to create separate experiences for users grouped by a certain criteria. As a developer, you can deliver different content to be served to different types of users (user segments). You can build set of rules on which the user segments are based. You can then create different versions of the pages of your website. 
+The Sitefinity CMS personalization feature gives developers the power to create separate experiences for users grouped by a certain criteria. As a developer, you can deliver different content to be served to different types of users (user segments). You can build set of rules on which the user segments are based. You can then create different versions of the pages of your website. 
 
-This Personalization extensions sample demonstrates a scenario where you need to personalize the content of a page depending on what day of the week users open the page. To achieve this, you need to extend the default functionality of Sitefinity's personalization module to fit your requirements.
+This Personalization extensions sample demonstrates a scenario where you need to personalize the content of a page depending on what day of the week users open the page. To achieve this, you need to extend the default functionality of the Sitefinity CMS personalization module to fit your requirements.
 
 
 
 ### Requirements
 
-* Sitefinity license
+* Sitefinity CMS license
 * .NET Framework 4
 * Visual Studio 2012
 * Microsoft SQL Server 2008R2 or later versions
@@ -29,7 +29,7 @@ Clear the NuGet cache files. To do this:
 2. Select all files and delete them.
 
 
-You must have a running Sitefinity project that with a personalization module installed. 
+You must have a running Sitefinity CMS project that with a personalization module installed. 
 
 ### Nuget package restoration
 The solution in this repository relies on NuGet packages with automatic package restore while the build procedure takes place.   
@@ -45,7 +45,7 @@ For a history and additional information related to package versions on differen
 
 3. Open your project and add a reference to the *DayOfWeekPersonalization.dll*.
 
-4. Build and run your Sitefinity application.
+4. Build and run your Sitefinity CMS application.
 
 
 ### Additional resources
