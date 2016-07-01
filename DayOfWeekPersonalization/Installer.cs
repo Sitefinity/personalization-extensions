@@ -98,7 +98,10 @@ namespace DayOfWeekPersonalization
                     ResourceLocation = "DayOfWeekPersonalization"
                 };
                 virtualPathConfig.VirtualPaths.Add(pathConfig);
+                ConfigManager.GetManager().SaveSection(virtualPathConfig);
+                SystemManager.RestartApplication("ConfigChange");
             }
+
         }
 
         /// <summary>

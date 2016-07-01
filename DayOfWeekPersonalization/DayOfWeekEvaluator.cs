@@ -20,7 +20,7 @@ namespace DayOfWeekPersonalization
         {
             get
             {
-                if (this.dateTime != null)
+                if (this.dateTime != DateTime.MinValue)
                 {
                     return this.dateTime;
                 }
