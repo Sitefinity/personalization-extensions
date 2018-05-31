@@ -1,9 +1,7 @@
 Personalization extensions
 ==========================
 
-### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The latest official version of Sitefinity that supports this sample is 9.1. Be aware that using a higher version could cause unexpected behavior. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
-
-[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.PersonalizationExtensions.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.PersonalizationExtensions.CI/)
+### Latest supported version: Sitefinity CMS 11.0.6700.0
 
 The Sitefinity CMS personalization feature gives developers the power to create separate experiences for users grouped by a certain criteria. As a developer, you can deliver different content to be served to different types of users (user segments). You can build set of rules on which the user segments are based. You can then create different versions of the pages of your website. 
 
@@ -13,11 +11,11 @@ This Personalization extensions sample demonstrates a scenario where you need to
 
 ### Requirements
 
-* Sitefinity CMS license
-* .NET Framework 4
-* Visual Studio 2012
-* Microsoft SQL Server 2008R2 or later versions
-* Windows Identity Foundation
+You must have a Sitefinity CMS license
+
+For more information, see the [System requirements](https://docs.sitefinity.com/system-requirements) for the  respective Sitefinity CMS version.
+
+Windows Identity Foundation
    NOTE: Depending on the Microsoft OS version you are using, the method for downloading and installing or enabling the identity framework differs:
 
   * **Windows 7** - download from [Windows Identity Foundation](http://www.microsoft.com/en-us/download/details.aspx?id=17331)
